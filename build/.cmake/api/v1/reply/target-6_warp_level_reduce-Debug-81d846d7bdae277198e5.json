@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/reduce_v3"
+			"path" : "bin/6_warp_level_reduce"
 		}
 	],
 	"backtrace" : 1,
@@ -26,19 +26,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 116,
+				"line" : 146,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 119,
+				"line" : 149,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 41,
+				"line" : 42,
 				"parent" : 0
 			}
 		]
@@ -82,7 +82,7 @@
 			]
 		}
 	],
-	"id" : "reduce_v3::@6890427a1f51a3e7e1df",
+	"id" : "6_warp_level_reduce::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -128,8 +128,8 @@
 		],
 		"language" : "CUDA"
 	},
-	"name" : "reduce_v3",
-	"nameOnDisk" : "reduce_v3",
+	"name" : "6_warp_level_reduce",
+	"nameOnDisk" : "6_warp_level_reduce",
 	"paths" : 
 	{
 		"build" : ".",
@@ -150,7 +150,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "5_reduce/reduce_v3.cu",
+			"path" : "6_warp_level_reduce.cu",
 			"sourceGroupIndex" : 0
 		}
 	],

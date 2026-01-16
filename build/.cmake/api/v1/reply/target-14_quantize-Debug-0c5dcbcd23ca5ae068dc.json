@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/3_vectorAdd"
+			"path" : "bin/14_quantize"
 		}
 	],
 	"backtrace" : 1,
@@ -26,19 +26,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 65,
+				"line" : 233,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 68,
+				"line" : 236,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 41,
+				"line" : 42,
 				"parent" : 0
 			}
 		]
@@ -82,7 +82,7 @@
 			]
 		}
 	],
-	"id" : "3_vectorAdd::@6890427a1f51a3e7e1df",
+	"id" : "14_quantize::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -128,8 +128,8 @@
 		],
 		"language" : "CUDA"
 	},
-	"name" : "3_vectorAdd",
-	"nameOnDisk" : "3_vectorAdd",
+	"name" : "14_quantize",
+	"nameOnDisk" : "14_quantize",
 	"paths" : 
 	{
 		"build" : ".",
@@ -150,7 +150,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "3_vectorAdd/3_vectorAdd.cu",
+			"path" : "14_quantize.cu",
 			"sourceGroupIndex" : 0
 		}
 	],

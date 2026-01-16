@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/12_measure_GPU_peak_perf"
+			"path" : "bin/reduce_v5"
 		}
 	],
 	"backtrace" : 1,
@@ -26,19 +26,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 209,
+				"line" : 131,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 212,
+				"line" : 134,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 41,
+				"line" : 42,
 				"parent" : 0
 			}
 		]
@@ -82,7 +82,7 @@
 			]
 		}
 	],
-	"id" : "12_measure_GPU_peak_perf::@6890427a1f51a3e7e1df",
+	"id" : "reduce_v5::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -128,8 +128,8 @@
 		],
 		"language" : "CUDA"
 	},
-	"name" : "12_measure_GPU_peak_perf",
-	"nameOnDisk" : "12_measure_GPU_peak_perf",
+	"name" : "reduce_v5",
+	"nameOnDisk" : "reduce_v5",
 	"paths" : 
 	{
 		"build" : ".",
@@ -150,7 +150,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "12_measure_GPU_peak_perf.cu",
+			"path" : "5_reduce/reduce_v5.cu",
 			"sourceGroupIndex" : 0
 		}
 	],

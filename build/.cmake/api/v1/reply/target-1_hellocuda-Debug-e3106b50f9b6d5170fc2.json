@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/reduce_v2"
+			"path" : "bin/1_hellocuda"
 		}
 	],
 	"backtrace" : 1,
@@ -26,19 +26,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 109,
+				"line" : 50,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 112,
+				"line" : 53,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 41,
+				"line" : 42,
 				"parent" : 0
 			}
 		]
@@ -82,7 +82,7 @@
 			]
 		}
 	],
-	"id" : "reduce_v2::@6890427a1f51a3e7e1df",
+	"id" : "1_hellocuda::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -128,8 +128,8 @@
 		],
 		"language" : "CUDA"
 	},
-	"name" : "reduce_v2",
-	"nameOnDisk" : "reduce_v2",
+	"name" : "1_hellocuda",
+	"nameOnDisk" : "1_hellocuda",
 	"paths" : 
 	{
 		"build" : ".",
@@ -150,7 +150,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "5_reduce/reduce_v2.cu",
+			"path" : "1_hellocuda.cu",
 			"sourceGroupIndex" : 0
 		}
 	],

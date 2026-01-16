@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/15_2_gemv"
+			"path" : "bin/13_2_CUDAstream"
 		}
 	],
 	"backtrace" : 1,
@@ -26,19 +26,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 247,
+				"line" : 225,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 250,
+				"line" : 228,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 41,
+				"line" : 42,
 				"parent" : 0
 			}
 		]
@@ -82,7 +82,7 @@
 			]
 		}
 	],
-	"id" : "15_2_gemv::@6890427a1f51a3e7e1df",
+	"id" : "13_2_CUDAstream::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -128,8 +128,8 @@
 		],
 		"language" : "CUDA"
 	},
-	"name" : "15_2_gemv",
-	"nameOnDisk" : "15_2_gemv",
+	"name" : "13_2_CUDAstream",
+	"nameOnDisk" : "13_2_CUDAstream",
 	"paths" : 
 	{
 		"build" : ".",
@@ -150,7 +150,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "15_gemv/15_2_fp32_fp16_gemv.cu",
+			"path" : "13_CUDAstream/13_2_CUDAstream_kernel_copy_overlap.cu",
 			"sourceGroupIndex" : 0
 		}
 	],

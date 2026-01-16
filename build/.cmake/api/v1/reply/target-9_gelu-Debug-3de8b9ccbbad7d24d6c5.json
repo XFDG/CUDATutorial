@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/16_dropout"
+			"path" : "bin/9_gelu"
 		}
 	],
 	"backtrace" : 1,
@@ -26,19 +26,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 255,
+				"line" : 178,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 258,
+				"line" : 181,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 41,
+				"line" : 42,
 				"parent" : 0
 			}
 		]
@@ -82,7 +82,7 @@
 			]
 		}
 	],
-	"id" : "16_dropout::@6890427a1f51a3e7e1df",
+	"id" : "9_gelu::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -128,8 +128,8 @@
 		],
 		"language" : "CUDA"
 	},
-	"name" : "16_dropout",
-	"nameOnDisk" : "16_dropout",
+	"name" : "9_gelu",
+	"nameOnDisk" : "9_gelu",
 	"paths" : 
 	{
 		"build" : ".",
@@ -150,7 +150,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "16_fused_dropout/16_dropout.cu",
+			"path" : "9_gelu.cu",
 			"sourceGroupIndex" : 0
 		}
 	],

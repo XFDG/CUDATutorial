@@ -4,7 +4,8 @@ project(CUDATutorial LANGUAGES CXX CUDA)
 find_package(CUDA 13.1 REQUIRED)
 # 需下载安装cuda toolkit，直接搜即可
 set(CUDA_PATH ${CUDA_TOOLKIT_ROOT_DIR})
-# set compiler flags
+# set compiler flags 
+#######################这个方法不支持cuda13.0，所以我自己改了下
 #set(CMAKE_C_FLAGS    "${CMAKE_C_FLAGS}")
 #set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS}")
 #set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS}  -Xcompiler -Wall")

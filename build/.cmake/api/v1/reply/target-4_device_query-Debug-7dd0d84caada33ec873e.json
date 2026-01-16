@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/reduce_v4"
+			"path" : "bin/4_device_query"
 		}
 	],
 	"backtrace" : 1,
@@ -26,19 +26,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 123,
+				"line" : 81,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 126,
+				"line" : 84,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 41,
+				"line" : 42,
 				"parent" : 0
 			}
 		]
@@ -82,7 +82,7 @@
 			]
 		}
 	],
-	"id" : "reduce_v4::@6890427a1f51a3e7e1df",
+	"id" : "4_device_query::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -128,8 +128,8 @@
 		],
 		"language" : "CUDA"
 	},
-	"name" : "reduce_v4",
-	"nameOnDisk" : "reduce_v4",
+	"name" : "4_device_query",
+	"nameOnDisk" : "4_device_query",
 	"paths" : 
 	{
 		"build" : ".",
@@ -150,7 +150,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "5_reduce/reduce_v4.cu",
+			"path" : "4_device_query.cu",
 			"sourceGroupIndex" : 0
 		}
 	],

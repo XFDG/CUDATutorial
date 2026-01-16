@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/reduce_v5"
+			"path" : "bin/15_2_gemv"
 		}
 	],
 	"backtrace" : 1,
@@ -26,19 +26,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 130,
+				"line" : 248,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 133,
+				"line" : 251,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 41,
+				"line" : 42,
 				"parent" : 0
 			}
 		]
@@ -82,7 +82,7 @@
 			]
 		}
 	],
-	"id" : "reduce_v5::@6890427a1f51a3e7e1df",
+	"id" : "15_2_gemv::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -128,8 +128,8 @@
 		],
 		"language" : "CUDA"
 	},
-	"name" : "reduce_v5",
-	"nameOnDisk" : "reduce_v5",
+	"name" : "15_2_gemv",
+	"nameOnDisk" : "15_2_gemv",
 	"paths" : 
 	{
 		"build" : ".",
@@ -150,7 +150,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "5_reduce/reduce_v5.cu",
+			"path" : "15_gemv/15_2_fp32_fp16_gemv.cu",
 			"sourceGroupIndex" : 0
 		}
 	],
