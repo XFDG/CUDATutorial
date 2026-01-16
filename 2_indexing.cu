@@ -17,7 +17,7 @@ __global__ void sum(float *x)
 int main(){
     int N = 32;
     int nbytes = N * sizeof(float);
-    float *dx, *hx;
+    float *dx, *hx; //device and host pointers
     /* allocate GPU mem */
     cudaMalloc((void **)&dx, nbytes);//思考为什么要用二级指针
     /* allocate CPU mem */
@@ -29,10 +29,10 @@ int main(){
         printf("%g\n", hx[i]);
     }
     /* copy data to GPU */
-    cudaMemcpy(dx, hx, nbytes, cudaMemcpyHostToDevice);
+    cudaMemcpy(dx, hx, nbytes, cudaMemcpyHostToDevice);  // 目标  来源  大小  方向
     /* launch GPU kernel */
-    sum<<<1, N>>>(dx);
-    /* copy data from GPU */
+    sum<<<2, N/2>>>(dx);
+    /* copy data from GPU */ 
     cudaMemcpy(hx, dx, nbytes, cudaMemcpyDeviceToHost);
     printf("hx current: \n");
     for (int i = 0; i < N; i++) {

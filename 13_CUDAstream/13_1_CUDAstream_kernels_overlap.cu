@@ -1,7 +1,7 @@
 #include <cuda_runtime.h>
 #include <iostream>
 #include <vector>
-
+#include <bits/stdc++.h>
 __global__ void float_add_one(float* buffer, uint32_t n)
 {
     int gid = blockDim.x * blockIdx.x + threadIdx.x;

@@ -1,7 +1,13 @@
 #include <cuda.h>
-#include <bits/stdc++.h>
+//#include <bits/stdc++.h>
 #include "cuda_runtime.h"
+#include <stdio.h>
+#include <iostream>
+#include <vector>
+#include <cmath>
+#include <algorithm>
 
+// #include <bits/stdc++.h>  <-- 这一行删掉或注释掉
 // 实现fp32的fused biasadd mask scale and add的融合算子
 // biasadd + mask + scale + elemwise_add四个算子的融合
 // （x + bias） * mask * scale + addend;
@@ -155,9 +161,9 @@ int main()
 
     bool isRight = CheckRight(y, groudTruth, n);
     if (isRight)
-        printf("结果正确\n");
+        printf("结果正确 _right \n");
     else
-        printf("结果错误\n");    
+        printf("结果错误 _wrong\n");    
 
     printf("it costs %f s \n", milliseconds/1000);
 

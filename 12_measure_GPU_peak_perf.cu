@@ -2,6 +2,8 @@
 #include <cuda.h>
 #include <cuda_fp16.h>
 #include "cuda_runtime.h"
+#include <bits/stdc++.h>
+#include <device_launch_parameters.h>
 #define LOOP_TIMES 1000
 //T4 fp32: 8.08 TFLOPS
 __global__ void FP32FLOPS(int* start, int* stop, float* x, float* y, float* result) {
@@ -69,9 +71,20 @@ int main() {
     
     int ThreadsPerSM = props.maxThreadsPerMultiProcessor;
     float FLOPS = (LOOP_TIMES * 4 * 2 * 1024) / (static_cast<float>(stopClock[0] - startClock[0]));
-    printf( "  GPU Max Clock rate: %0.2f GHz\n" , props.clockRate * 1e-6f);
-    printf(" SM counts is %d", props.multiProcessorCount);
-    printf("actual NVIDIA T4 GPU peak FLOPS is %f (TFLOPS) \n", FLOPS * props.clockRate * 1e-9 * props.multiProcessorCount);
+
+    // ✅ 新代码 (手动获取 clockRate)
+int myClockRate = 0;
+cudaDeviceGetAttribute(&myClockRate, cudaDevAttrClockRate, 0); // 0 代表第0号显卡
+
+printf( "  GPU Max Clock rate: %0.2f GHz\n" , myClockRate * 1e-6f);
+printf(" SM counts is %d", props.multiProcessorCount);
+// 注意：下面这行把 props.clockRate 换成了 myClockRate
+printf("actual NVIDIA T4 GPU peak FLOPS is %f (TFLOPS) \n", FLOPS * myClockRate * 1e-9 * props.multiProcessorCount);
+    
+//printf( "  GPU Max Clock rate: %0.2f GHz\n" , props.clockRate * 1e-6f);
+    //printf(" SM counts is %d", props.multiProcessorCount);
+    //printf("actual NVIDIA T4 GPU peak FLOPS is %f (TFLOPS) \n", FLOPS * props.clockRate * 1e-9 * props.multiProcessorCount);
+   
     free(x);
     free(y);
     free(startClock);

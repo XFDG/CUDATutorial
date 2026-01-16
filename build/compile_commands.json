@@ -1,0 +1,170 @@
+[
+{
+  "directory": "/home/ai/LLMQRT/CUDATutorial/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/1_hellocuda.dir/includes_CUDA.rsp   -Xcompiler -Wall -g -std=c++17 -arch=native -x cu -c /home/ai/LLMQRT/CUDATutorial/1_hellocuda.cu -o CMakeFiles/1_hellocuda.dir/1_hellocuda.cu.o",
+  "file": "/home/ai/LLMQRT/CUDATutorial/1_hellocuda.cu",
+  "output": "CMakeFiles/1_hellocuda.dir/1_hellocuda.cu.o"
+},
+{
+  "directory": "/home/ai/LLMQRT/CUDATutorial/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/2_indexing.dir/includes_CUDA.rsp   -Xcompiler -Wall -g -std=c++17 -arch=native -x cu -c /home/ai/LLMQRT/CUDATutorial/2_indexing.cu -o CMakeFiles/2_indexing.dir/2_indexing.cu.o",
+  "file": "/home/ai/LLMQRT/CUDATutorial/2_indexing.cu",
+  "output": "CMakeFiles/2_indexing.dir/2_indexing.cu.o"
+},
+{
+  "directory": "/home/ai/LLMQRT/CUDATutorial/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/3_vectorAdd.dir/includes_CUDA.rsp   -Xcompiler -Wall -g -std=c++17 -arch=native -x cu -c /home/ai/LLMQRT/CUDATutorial/3_vectorAdd/3_vectorAdd.cu -o CMakeFiles/3_vectorAdd.dir/3_vectorAdd/3_vectorAdd.cu.o",
+  "file": "/home/ai/LLMQRT/CUDATutorial/3_vectorAdd/3_vectorAdd.cu",
+  "output": "CMakeFiles/3_vectorAdd.dir/3_vectorAdd/3_vectorAdd.cu.o"
+},
+{
+  "directory": "/home/ai/LLMQRT/CUDATutorial/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/3_1_vectorAdd.dir/includes_CUDA.rsp   -Xcompiler -Wall -g -std=c++17 -arch=native -x cu -c /home/ai/LLMQRT/CUDATutorial/3_vectorAdd/3_1_vectorized_vectorAdd.cu -o CMakeFiles/3_1_vectorAdd.dir/3_vectorAdd/3_1_vectorized_vectorAdd.cu.o",
+  "file": "/home/ai/LLMQRT/CUDATutorial/3_vectorAdd/3_1_vectorized_vectorAdd.cu",
+  "output": "CMakeFiles/3_1_vectorAdd.dir/3_vectorAdd/3_1_vectorized_vectorAdd.cu.o"
+},
+{
+  "directory": "/home/ai/LLMQRT/CUDATutorial/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/4_device_query.dir/includes_CUDA.rsp   -Xcompiler -Wall -g -std=c++17 -arch=native -x cu -c /home/ai/LLMQRT/CUDATutorial/4_device_query.cu -o CMakeFiles/4_device_query.dir/4_device_query.cu.o",
+  "file": "/home/ai/LLMQRT/CUDATutorial/4_device_query.cu",
+  "output": "CMakeFiles/4_device_query.dir/4_device_query.cu.o"
+},
+{
+  "directory": "/home/ai/LLMQRT/CUDATutorial/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/reduce_baseline.dir/includes_CUDA.rsp   -Xcompiler -Wall -g -std=c++17 -arch=native -x cu -c /home/ai/LLMQRT/CUDATutorial/5_reduce/reduce_baseline.cu -o CMakeFiles/reduce_baseline.dir/5_reduce/reduce_baseline.cu.o",
+  "file": "/home/ai/LLMQRT/CUDATutorial/5_reduce/reduce_baseline.cu",
+  "output": "CMakeFiles/reduce_baseline.dir/5_reduce/reduce_baseline.cu.o"
+},
+{
+  "directory": "/home/ai/LLMQRT/CUDATutorial/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/reduce_v0.dir/includes_CUDA.rsp   -Xcompiler -Wall -g -std=c++17 -arch=native -x cu -c /home/ai/LLMQRT/CUDATutorial/5_reduce/reduce_v0.cu -o CMakeFiles/reduce_v0.dir/5_reduce/reduce_v0.cu.o",
+  "file": "/home/ai/LLMQRT/CUDATutorial/5_reduce/reduce_v0.cu",
+  "output": "CMakeFiles/reduce_v0.dir/5_reduce/reduce_v0.cu.o"
+},
+{
+  "directory": "/home/ai/LLMQRT/CUDATutorial/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/reduce_v1.dir/includes_CUDA.rsp   -Xcompiler -Wall -g -std=c++17 -arch=native -x cu -c /home/ai/LLMQRT/CUDATutorial/5_reduce/reduce_v1.cu -o CMakeFiles/reduce_v1.dir/5_reduce/reduce_v1.cu.o",
+  "file": "/home/ai/LLMQRT/CUDATutorial/5_reduce/reduce_v1.cu",
+  "output": "CMakeFiles/reduce_v1.dir/5_reduce/reduce_v1.cu.o"
+},
+{
+  "directory": "/home/ai/LLMQRT/CUDATutorial/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/reduce_v2.dir/includes_CUDA.rsp   -Xcompiler -Wall -g -std=c++17 -arch=native -x cu -c /home/ai/LLMQRT/CUDATutorial/5_reduce/reduce_v2.cu -o CMakeFiles/reduce_v2.dir/5_reduce/reduce_v2.cu.o",
+  "file": "/home/ai/LLMQRT/CUDATutorial/5_reduce/reduce_v2.cu",
+  "output": "CMakeFiles/reduce_v2.dir/5_reduce/reduce_v2.cu.o"
+},
+{
+  "directory": "/home/ai/LLMQRT/CUDATutorial/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/reduce_v3.dir/includes_CUDA.rsp   -Xcompiler -Wall -g -std=c++17 -arch=native -x cu -c /home/ai/LLMQRT/CUDATutorial/5_reduce/reduce_v3.cu -o CMakeFiles/reduce_v3.dir/5_reduce/reduce_v3.cu.o",
+  "file": "/home/ai/LLMQRT/CUDATutorial/5_reduce/reduce_v3.cu",
+  "output": "CMakeFiles/reduce_v3.dir/5_reduce/reduce_v3.cu.o"
+},
+{
+  "directory": "/home/ai/LLMQRT/CUDATutorial/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/reduce_v4.dir/includes_CUDA.rsp   -Xcompiler -Wall -g -std=c++17 -arch=native -x cu -c /home/ai/LLMQRT/CUDATutorial/5_reduce/reduce_v4.cu -o CMakeFiles/reduce_v4.dir/5_reduce/reduce_v4.cu.o",
+  "file": "/home/ai/LLMQRT/CUDATutorial/5_reduce/reduce_v4.cu",
+  "output": "CMakeFiles/reduce_v4.dir/5_reduce/reduce_v4.cu.o"
+},
+{
+  "directory": "/home/ai/LLMQRT/CUDATutorial/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/reduce_v5.dir/includes_CUDA.rsp   -Xcompiler -Wall -g -std=c++17 -arch=native -x cu -c /home/ai/LLMQRT/CUDATutorial/5_reduce/reduce_v5.cu -o CMakeFiles/reduce_v5.dir/5_reduce/reduce_v5.cu.o",
+  "file": "/home/ai/LLMQRT/CUDATutorial/5_reduce/reduce_v5.cu",
+  "output": "CMakeFiles/reduce_v5.dir/5_reduce/reduce_v5.cu.o"
+},
+{
+  "directory": "/home/ai/LLMQRT/CUDATutorial/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/reduce_v6.dir/includes_CUDA.rsp   -Xcompiler -Wall -g -std=c++17 -arch=native -x cu -c /home/ai/LLMQRT/CUDATutorial/5_reduce/reduce_v6.cu -o CMakeFiles/reduce_v6.dir/5_reduce/reduce_v6.cu.o",
+  "file": "/home/ai/LLMQRT/CUDATutorial/5_reduce/reduce_v6.cu",
+  "output": "CMakeFiles/reduce_v6.dir/5_reduce/reduce_v6.cu.o"
+},
+{
+  "directory": "/home/ai/LLMQRT/CUDATutorial/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/6_warp_level_reduce.dir/includes_CUDA.rsp   -Xcompiler -Wall -g -std=c++17 -arch=native -x cu -c /home/ai/LLMQRT/CUDATutorial/6_warp_level_reduce.cu -o CMakeFiles/6_warp_level_reduce.dir/6_warp_level_reduce.cu.o",
+  "file": "/home/ai/LLMQRT/CUDATutorial/6_warp_level_reduce.cu",
+  "output": "CMakeFiles/6_warp_level_reduce.dir/6_warp_level_reduce.cu.o"
+},
+{
+  "directory": "/home/ai/LLMQRT/CUDATutorial/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/7_histogram.dir/includes_CUDA.rsp   -Xcompiler -Wall -g -std=c++17 -arch=native -x cu -c /home/ai/LLMQRT/CUDATutorial/7_histogram.cu -o CMakeFiles/7_histogram.dir/7_histogram.cu.o",
+  "file": "/home/ai/LLMQRT/CUDATutorial/7_histogram.cu",
+  "output": "CMakeFiles/7_histogram.dir/7_histogram.cu.o"
+},
+{
+  "directory": "/home/ai/LLMQRT/CUDATutorial/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/7_1_histogram.dir/includes_CUDA.rsp   -Xcompiler -Wall -g -std=c++17 -arch=native -x cu -c /home/ai/LLMQRT/CUDATutorial/7_1_histogram.cu -o CMakeFiles/7_1_histogram.dir/7_1_histogram.cu.o",
+  "file": "/home/ai/LLMQRT/CUDATutorial/7_1_histogram.cu",
+  "output": "CMakeFiles/7_1_histogram.dir/7_1_histogram.cu.o"
+},
+{
+  "directory": "/home/ai/LLMQRT/CUDATutorial/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/8_copy_if.dir/includes_CUDA.rsp   -Xcompiler -Wall -g -std=c++17 -arch=native -x cu -c /home/ai/LLMQRT/CUDATutorial/8_copy_if.cu -o CMakeFiles/8_copy_if.dir/8_copy_if.cu.o",
+  "file": "/home/ai/LLMQRT/CUDATutorial/8_copy_if.cu",
+  "output": "CMakeFiles/8_copy_if.dir/8_copy_if.cu.o"
+},
+{
+  "directory": "/home/ai/LLMQRT/CUDATutorial/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/9_gelu.dir/includes_CUDA.rsp   -Xcompiler -Wall -g -std=c++17 -arch=native -x cu -c /home/ai/LLMQRT/CUDATutorial/9_gelu.cu -o CMakeFiles/9_gelu.dir/9_gelu.cu.o",
+  "file": "/home/ai/LLMQRT/CUDATutorial/9_gelu.cu",
+  "output": "CMakeFiles/9_gelu.dir/9_gelu.cu.o"
+},
+{
+  "directory": "/home/ai/LLMQRT/CUDATutorial/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/10_fp32.dir/includes_CUDA.rsp   -Xcompiler -Wall -g -std=c++17 -arch=native -x cu -c /home/ai/LLMQRT/CUDATutorial/10_fused_bias_mask_scale_and_add/10_fused_bias_mask_scale_and_add_fp32.cu -o CMakeFiles/10_fp32.dir/10_fused_bias_mask_scale_and_add/10_fused_bias_mask_scale_and_add_fp32.cu.o",
+  "file": "/home/ai/LLMQRT/CUDATutorial/10_fused_bias_mask_scale_and_add/10_fused_bias_mask_scale_and_add_fp32.cu",
+  "output": "CMakeFiles/10_fp32.dir/10_fused_bias_mask_scale_and_add/10_fused_bias_mask_scale_and_add_fp32.cu.o"
+},
+{
+  "directory": "/home/ai/LLMQRT/CUDATutorial/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/10_fp16.dir/includes_CUDA.rsp   -Xcompiler -Wall -g -std=c++17 -arch=native -x cu -c /home/ai/LLMQRT/CUDATutorial/10_fused_bias_mask_scale_and_add/10_fused_bias_mask_scale_and_add_fp16.cu -o CMakeFiles/10_fp16.dir/10_fused_bias_mask_scale_and_add/10_fused_bias_mask_scale_and_add_fp16.cu.o",
+  "file": "/home/ai/LLMQRT/CUDATutorial/10_fused_bias_mask_scale_and_add/10_fused_bias_mask_scale_and_add_fp16.cu",
+  "output": "CMakeFiles/10_fp16.dir/10_fused_bias_mask_scale_and_add/10_fused_bias_mask_scale_and_add_fp16.cu.o"
+},
+{
+  "directory": "/home/ai/LLMQRT/CUDATutorial/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/11_softmax.dir/includes_CUDA.rsp   -Xcompiler -Wall -g -std=c++17 -arch=native -x cu -c /home/ai/LLMQRT/CUDATutorial/11_softmax.cu -o CMakeFiles/11_softmax.dir/11_softmax.cu.o",
+  "file": "/home/ai/LLMQRT/CUDATutorial/11_softmax.cu",
+  "output": "CMakeFiles/11_softmax.dir/11_softmax.cu.o"
+},
+{
+  "directory": "/home/ai/LLMQRT/CUDATutorial/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/12_measure_GPU_peak_perf.dir/includes_CUDA.rsp   -Xcompiler -Wall -g -std=c++17 -arch=native -x cu -c /home/ai/LLMQRT/CUDATutorial/12_measure_GPU_peak_perf.cu -o CMakeFiles/12_measure_GPU_peak_perf.dir/12_measure_GPU_peak_perf.cu.o",
+  "file": "/home/ai/LLMQRT/CUDATutorial/12_measure_GPU_peak_perf.cu",
+  "output": "CMakeFiles/12_measure_GPU_peak_perf.dir/12_measure_GPU_peak_perf.cu.o"
+},
+{
+  "directory": "/home/ai/LLMQRT/CUDATutorial/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/13_1_CUDAstream.dir/includes_CUDA.rsp   -Xcompiler -Wall -g -std=c++17 -arch=native -x cu -c /home/ai/LLMQRT/CUDATutorial/13_CUDAstream/13_1_CUDAstream_kernels_overlap.cu -o CMakeFiles/13_1_CUDAstream.dir/13_CUDAstream/13_1_CUDAstream_kernels_overlap.cu.o",
+  "file": "/home/ai/LLMQRT/CUDATutorial/13_CUDAstream/13_1_CUDAstream_kernels_overlap.cu",
+  "output": "CMakeFiles/13_1_CUDAstream.dir/13_CUDAstream/13_1_CUDAstream_kernels_overlap.cu.o"
+},
+{
+  "directory": "/home/ai/LLMQRT/CUDATutorial/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/13_2_CUDAstream.dir/includes_CUDA.rsp   -Xcompiler -Wall -g -std=c++17 -arch=native -x cu -c /home/ai/LLMQRT/CUDATutorial/13_CUDAstream/13_2_CUDAstream_kernel_copy_overlap.cu -o CMakeFiles/13_2_CUDAstream.dir/13_CUDAstream/13_2_CUDAstream_kernel_copy_overlap.cu.o",
+  "file": "/home/ai/LLMQRT/CUDATutorial/13_CUDAstream/13_2_CUDAstream_kernel_copy_overlap.cu",
+  "output": "CMakeFiles/13_2_CUDAstream.dir/13_CUDAstream/13_2_CUDAstream_kernel_copy_overlap.cu.o"
+},
+{
+  "directory": "/home/ai/LLMQRT/CUDATutorial/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/14_quantize.dir/includes_CUDA.rsp   -Xcompiler -Wall -g -std=c++17 -arch=native -x cu -c /home/ai/LLMQRT/CUDATutorial/14_quantize.cu -o CMakeFiles/14_quantize.dir/14_quantize.cu.o",
+  "file": "/home/ai/LLMQRT/CUDATutorial/14_quantize.cu",
+  "output": "CMakeFiles/14_quantize.dir/14_quantize.cu.o"
+},
+{
+  "directory": "/home/ai/LLMQRT/CUDATutorial/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/15_1_gemv.dir/includes_CUDA.rsp   -Xcompiler -Wall -g -std=c++17 -arch=native -x cu -c /home/ai/LLMQRT/CUDATutorial/15_gemv/15_1_fp32_fp16_gemv.cu -o CMakeFiles/15_1_gemv.dir/15_gemv/15_1_fp32_fp16_gemv.cu.o",
+  "file": "/home/ai/LLMQRT/CUDATutorial/15_gemv/15_1_fp32_fp16_gemv.cu",
+  "output": "CMakeFiles/15_1_gemv.dir/15_gemv/15_1_fp32_fp16_gemv.cu.o"
+},
+{
+  "directory": "/home/ai/LLMQRT/CUDATutorial/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/15_2_gemv.dir/includes_CUDA.rsp   -Xcompiler -Wall -g -std=c++17 -arch=native -x cu -c /home/ai/LLMQRT/CUDATutorial/15_gemv/15_2_fp32_fp16_gemv.cu -o CMakeFiles/15_2_gemv.dir/15_gemv/15_2_fp32_fp16_gemv.cu.o",
+  "file": "/home/ai/LLMQRT/CUDATutorial/15_gemv/15_2_fp32_fp16_gemv.cu",
+  "output": "CMakeFiles/15_2_gemv.dir/15_gemv/15_2_fp32_fp16_gemv.cu.o"
+},
+{
+  "directory": "/home/ai/LLMQRT/CUDATutorial/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/16_dropout.dir/includes_CUDA.rsp   -Xcompiler -Wall -g -std=c++17 -arch=native -x cu -c /home/ai/LLMQRT/CUDATutorial/16_fused_dropout/16_dropout.cu -o CMakeFiles/16_dropout.dir/16_fused_dropout/16_dropout.cu.o",
+  "file": "/home/ai/LLMQRT/CUDATutorial/16_fused_dropout/16_dropout.cu",
+  "output": "CMakeFiles/16_dropout.dir/16_fused_dropout/16_dropout.cu.o"
+}
+]

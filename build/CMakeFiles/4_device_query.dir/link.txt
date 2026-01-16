@@ -1,0 +1,1 @@
+/usr/bin/g++ @CMakeFiles/4_device_query.dir/objects1.rsp -o bin/4_device_query @CMakeFiles/4_device_query.dir/linkLibs.rsp -L"/usr/local/cuda/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda/targets/x86_64-linux/lib"

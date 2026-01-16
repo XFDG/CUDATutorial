@@ -2,7 +2,8 @@
 #include <cuda.h>
 #include <iostream>
 #include <string>
-
+#include <bits/stdc++.h>
+#include <device_launch_parameters.h>
 int main() {
   int deviceCount = 0;
   // 获取当前机器的GPU数量
@@ -25,9 +26,22 @@ int main() {
              static_cast<float>(deviceProp.totalGlobalMem / 1048576.0f),
              (unsigned long long)deviceProp.totalGlobalMem);
     // 时钟频率
-    printf( "  GPU Max Clock rate:                            %.0f MHz (%0.2f "
-        "GHz)\n",
-        deviceProp.clockRate * 1e-3f, deviceProp.clockRate * 1e-6f);
+
+       // ✅ 新代码
+              int myClockRate = 0;
+              // 如果你的代码在一个循环里 (for int dev = 0...)，建议把下面的 0 改成 dev
+              cudaDeviceGetAttribute(&myClockRate, cudaDevAttrClockRate, 0); 
+
+                     printf( "  GPU Max Clock rate:                            %.0f MHz (%0.2f "
+                            "GHz)\n",
+                            myClockRate * 1e-3f, myClockRate * 1e-6f);
+       
+    //printf( "  GPU Max Clock rate:                            %.0f MHz (%0.2f "
+      //  "GHz)\n",
+        //deviceProp.clockRate * 1e-3f, deviceProp.clockRate * 1e-6f);
+
+        
+        
     // L2 cache大小
     printf("  L2 Cache Size:                                 %d bytes\n",
              deviceProp.l2CacheSize);

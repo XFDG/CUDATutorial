@@ -1,0 +1,1 @@
+/usr/bin/g++ @CMakeFiles/9_gelu.dir/objects1.rsp -o bin/9_gelu @CMakeFiles/9_gelu.dir/linkLibs.rsp -L"/usr/local/cuda/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda/targets/x86_64-linux/lib"

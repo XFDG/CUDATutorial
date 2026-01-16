@@ -1,0 +1,1 @@
+/usr/bin/g++ @CMakeFiles/2_indexing.dir/objects1.rsp -o bin/2_indexing @CMakeFiles/2_indexing.dir/linkLibs.rsp -L"/usr/local/cuda/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda/targets/x86_64-linux/lib"
