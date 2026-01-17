@@ -1,0 +1,1 @@
+*** thread -> warp -> block(>=32 thread) -> grid***
