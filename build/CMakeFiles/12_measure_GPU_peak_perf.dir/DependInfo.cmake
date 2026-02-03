@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ai/LLMQRT/CUDATutorial/12_measure_GPU_peak_perf.cu" "CMakeFiles/12_measure_GPU_peak_perf.dir/12_measure_GPU_peak_perf.cu.o" "gcc" "CMakeFiles/12_measure_GPU_peak_perf.dir/12_measure_GPU_peak_perf.cu.o.d"
+  "/home/ai/CUDATutorial/12_measure_GPU_peak_perf.cu" "CMakeFiles/12_measure_GPU_peak_perf.dir/12_measure_GPU_peak_perf.cu.o" "gcc" "CMakeFiles/12_measure_GPU_peak_perf.dir/12_measure_GPU_peak_perf.cu.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

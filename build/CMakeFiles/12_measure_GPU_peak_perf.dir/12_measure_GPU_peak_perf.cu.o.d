@@ -1,4 +1,4 @@
-CMakeFiles/12_measure_GPU_peak_perf.dir/12_measure_GPU_peak_perf.cu.o : /home/ai/LLMQRT/CUDATutorial/12_measure_GPU_peak_perf.cu \
+CMakeFiles/12_measure_GPU_peak_perf.dir/12_measure_GPU_peak_perf.cu.o : /home/ai/CUDATutorial/12_measure_GPU_peak_perf.cu \
     /usr/include/stdc-predef.h \
     /usr/local/cuda/include/cuda_runtime.h \
     /usr/local/cuda/include/crt/host_config.h \

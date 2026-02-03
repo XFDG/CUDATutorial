@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/ai/LLMQRT/CUDATutorial/CMakeLists.txt"
+  "/home/ai/CUDATutorial/CMakeLists.txt"
   "CMakeFiles/3.28.3/CMakeCUDACompiler.cmake"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
@@ -29,6 +29,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.28/Modules/Compiler/NVIDIA.cmake"
   "/usr/share/cmake-3.28/Modules/FindCUDA.cmake"
   "/usr/share/cmake-3.28/Modules/FindCUDA/select_compute_arch.cmake"
+  "/usr/share/cmake-3.28/Modules/FindCUDAToolkit.cmake"
   "/usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake"
   "/usr/share/cmake-3.28/Modules/FindPackageMessage.cmake"
   "/usr/share/cmake-3.28/Modules/FindThreads.cmake"
@@ -81,4 +82,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/15_1_gemv.dir/DependInfo.cmake"
   "CMakeFiles/15_2_gemv.dir/DependInfo.cmake"
   "CMakeFiles/16_dropout.dir/DependInfo.cmake"
+  "CMakeFiles/hopper_bench.dir/DependInfo.cmake"
   )

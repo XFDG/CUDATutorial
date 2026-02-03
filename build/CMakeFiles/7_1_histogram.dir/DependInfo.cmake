@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ai/LLMQRT/CUDATutorial/7_1_histogram.cu" "CMakeFiles/7_1_histogram.dir/7_1_histogram.cu.o" "gcc" "CMakeFiles/7_1_histogram.dir/7_1_histogram.cu.o.d"
+  "/home/ai/CUDATutorial/7_1_histogram.cu" "CMakeFiles/7_1_histogram.dir/7_1_histogram.cu.o" "gcc" "CMakeFiles/7_1_histogram.dir/7_1_histogram.cu.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

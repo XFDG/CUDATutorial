@@ -1,4 +1,4 @@
-CMakeFiles/4_device_query.dir/4_device_query.cu.o : /home/ai/LLMQRT/CUDATutorial/4_device_query.cu \
+CMakeFiles/4_device_query.dir/4_device_query.cu.o : /home/ai/CUDATutorial/4_device_query.cu \
     /usr/include/stdc-predef.h \
     /usr/local/cuda/include/cuda_runtime.h \
     /usr/local/cuda/include/crt/host_config.h \

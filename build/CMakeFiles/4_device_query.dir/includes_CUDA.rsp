@@ -1,1 +1,1 @@
--I/home/ai/LLMQRT/CUDATutorial -I/home/ai/LLMQRT/CUDATutorial/15_gemv -I/usr/local/cuda/include
+-I/home/ai/CUDATutorial -I/home/ai/CUDATutorial/15_gemv -I/usr/local/cuda/include

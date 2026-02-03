@@ -1,0 +1,312 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CUDATutorial",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "10_fp16::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-10_fp16-Debug-f716ae486a5ff7da043d.json",
+					"name" : "10_fp16",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "10_fp32::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-10_fp32-Debug-544ffcbe1d4cac4b5772.json",
+					"name" : "10_fp32",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "11_softmax::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-11_softmax-Debug-4be80edce90b94abf0e7.json",
+					"name" : "11_softmax",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "12_measure_GPU_peak_perf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-12_measure_GPU_peak_perf-Debug-663064989a65af60a3e4.json",
+					"name" : "12_measure_GPU_peak_perf",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "13_1_CUDAstream::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-13_1_CUDAstream-Debug-0969cdd75978b6a28d70.json",
+					"name" : "13_1_CUDAstream",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "13_2_CUDAstream::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-13_2_CUDAstream-Debug-c340f2de9a5d181231f4.json",
+					"name" : "13_2_CUDAstream",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "14_quantize::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-14_quantize-Debug-b8bf903b43c2fa1010d9.json",
+					"name" : "14_quantize",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "15_1_gemv::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-15_1_gemv-Debug-98bfa0e63207bfefe32f.json",
+					"name" : "15_1_gemv",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "15_2_gemv::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-15_2_gemv-Debug-9873293d12a1c418207f.json",
+					"name" : "15_2_gemv",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "16_dropout::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-16_dropout-Debug-ef8bcc31ba4603d3d236.json",
+					"name" : "16_dropout",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "1_hellocuda::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-1_hellocuda-Debug-8527cc04b7ba210be45b.json",
+					"name" : "1_hellocuda",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "2_indexing::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-2_indexing-Debug-93a8d3f7b0e9497d0945.json",
+					"name" : "2_indexing",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "3_1_vectorAdd::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-3_1_vectorAdd-Debug-b4589758be84695b1a81.json",
+					"name" : "3_1_vectorAdd",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "3_vectorAdd::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-3_vectorAdd-Debug-510d031facf48d7d3c42.json",
+					"name" : "3_vectorAdd",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "4_device_query::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-4_device_query-Debug-d5cd674c188ab86d506b.json",
+					"name" : "4_device_query",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "6_warp_level_reduce::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-6_warp_level_reduce-Debug-ddd1308b09a58f01df12.json",
+					"name" : "6_warp_level_reduce",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "7_1_histogram::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-7_1_histogram-Debug-f60f89c7bc937fe465cd.json",
+					"name" : "7_1_histogram",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "7_histogram::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-7_histogram-Debug-b9f5379d54965697f7d0.json",
+					"name" : "7_histogram",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "8_copy_if::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-8_copy_if-Debug-666c01c7cedc81650766.json",
+					"name" : "8_copy_if",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "9_gelu::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-9_gelu-Debug-4fe4f83bcdbd506f68db.json",
+					"name" : "9_gelu",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hopper_bench::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hopper_bench-Debug-80950af2f4c18f5505be.json",
+					"name" : "hopper_bench",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "reduce_baseline::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-reduce_baseline-Debug-a5174b17fd149421e3a9.json",
+					"name" : "reduce_baseline",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "reduce_v0::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-reduce_v0-Debug-a847a7330492d50d18bb.json",
+					"name" : "reduce_v0",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "reduce_v1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-reduce_v1-Debug-b03efce1e93eed8434bb.json",
+					"name" : "reduce_v1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "reduce_v2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-reduce_v2-Debug-93854059c5a7410db472.json",
+					"name" : "reduce_v2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "reduce_v3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-reduce_v3-Debug-ef3d21170e9565d8229e.json",
+					"name" : "reduce_v3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "reduce_v4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-reduce_v4-Debug-f53cba6779745aa3b117.json",
+					"name" : "reduce_v4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "reduce_v5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-reduce_v5-Debug-f1e2fc9bad45450c54ed.json",
+					"name" : "reduce_v5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "reduce_v6::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-reduce_v6-Debug-ca7aa5174f1856183c57.json",
+					"name" : "reduce_v6",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ai/CUDATutorial/build",
+		"source" : "/home/ai/CUDATutorial"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

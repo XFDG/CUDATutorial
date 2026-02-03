@@ -1,4 +1,4 @@
-CMakeFiles/7_1_histogram.dir/7_1_histogram.cu.o : /home/ai/LLMQRT/CUDATutorial/7_1_histogram.cu \
+CMakeFiles/7_1_histogram.dir/7_1_histogram.cu.o : /home/ai/CUDATutorial/7_1_histogram.cu \
     /usr/include/stdc-predef.h \
     /usr/local/cuda/include/cuda_runtime.h \
     /usr/local/cuda/include/crt/host_config.h \

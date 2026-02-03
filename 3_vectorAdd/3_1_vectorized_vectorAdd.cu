@@ -21,6 +21,9 @@ float4 LoadFromGlobalPTX(float4 *ptr) {
 }
 
 //float4 vectoradd
+// 原来的 float* 变量，假设为A，A+1,偏移一个单位（在内存中的地址）》
+// <float4*> 变量，假设为B，B+1，偏移四个单位（在内存中的地址）  -> 最小单元为长度为四的向量 -> 向量化
+
 __global__ void mem_bw (float* A,  float* B, float* C){
     // 泛指当前线程在所有block范围内的全局id
 	int idx = blockIdx.x * blockDim.x + threadIdx.x;
@@ -34,6 +37,8 @@ __global__ void mem_bw (float* A,  float* B, float* C){
 		float4 b1 = reinterpret_cast<float4*>(B)[i];
 		//float4 b1 = LoadFromGlobalPTX(reinterpret_cast<float4*>(B) + i);
 		float4 c1;
+
+		//cuda只支持标量化计算，向量化读写
 		// 测量显存带宽方法1:向量加法,248.8g/s
 		c1.x = a1.x + b1.x;
 		c1.y = a1.y + b1.y;

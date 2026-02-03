@@ -45,7 +45,7 @@ int main(){
         a[i] = 1;
     }
 
-    int groudtruth = N * 1;
+    int groudtruth = N * 1;  //最后应该有的结果
     // 把初始化后的数据拷贝到GPU
     cudaMemcpy(d_a, a, N * sizeof(int), cudaMemcpyHostToDevice);
     // 定义分配的block数量和threads数量
@@ -64,7 +64,7 @@ int main(){
     // 将结果拷回CPU并check正确性
     cudaMemcpy(out, d_out, GridSize * sizeof(int), cudaMemcpyDeviceToHost);
     printf("allcated %d blocks, data counts are %d", GridSize, N);
-    bool is_right = CheckResult(out, groudtruth, GridSize);
+    bool is_right = CheckResult(out, groudtruth, GridSize); //最后应该有的结果
     if(is_right) {
         printf("the ans is right\n");
     } else {

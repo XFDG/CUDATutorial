@@ -1,4 +1,4 @@
-CMakeFiles/11_softmax.dir/11_softmax.cu.o : /home/ai/LLMQRT/CUDATutorial/11_softmax.cu \
+CMakeFiles/11_softmax.dir/11_softmax.cu.o : /home/ai/CUDATutorial/11_softmax.cu \
     /usr/include/stdc-predef.h \
     /usr/local/cuda/include/cuda_runtime.h \
     /usr/local/cuda/include/crt/host_config.h \

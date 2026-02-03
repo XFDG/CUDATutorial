@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ai/LLMQRT/CUDATutorial/2_indexing.cu" "CMakeFiles/2_indexing.dir/2_indexing.cu.o" "gcc" "CMakeFiles/2_indexing.dir/2_indexing.cu.o.d"
+  "/home/ai/CUDATutorial/2_indexing.cu" "CMakeFiles/2_indexing.dir/2_indexing.cu.o" "gcc" "CMakeFiles/2_indexing.dir/2_indexing.cu.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

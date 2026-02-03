@@ -1,0 +1,1 @@
+-I/home/ai/CUDATutorial -I/home/ai/CUDATutorial/15_gemv -I/usr/local/cuda/include -isystem "/usr/local/cuda/targets/x86_64-linux/include"

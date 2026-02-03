@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ai/LLMQRT/CUDATutorial/11_softmax.cu" "CMakeFiles/11_softmax.dir/11_softmax.cu.o" "gcc" "CMakeFiles/11_softmax.dir/11_softmax.cu.o.d"
+  "/home/ai/CUDATutorial/11_softmax.cu" "CMakeFiles/11_softmax.dir/11_softmax.cu.o" "gcc" "CMakeFiles/11_softmax.dir/11_softmax.cu.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

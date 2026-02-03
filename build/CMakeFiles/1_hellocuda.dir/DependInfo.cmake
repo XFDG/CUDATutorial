@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ai/LLMQRT/CUDATutorial/1_hellocuda.cu" "CMakeFiles/1_hellocuda.dir/1_hellocuda.cu.o" "gcc" "CMakeFiles/1_hellocuda.dir/1_hellocuda.cu.o.d"
+  "/home/ai/CUDATutorial/1_hellocuda.cu" "CMakeFiles/1_hellocuda.dir/1_hellocuda.cu.o" "gcc" "CMakeFiles/1_hellocuda.dir/1_hellocuda.cu.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

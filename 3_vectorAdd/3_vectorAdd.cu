@@ -9,6 +9,15 @@ __global__ void vec_add(FLOAT *x, FLOAT *y, FLOAT *z, int N)
 {
     /* 2D grid */
     int idx = (blockDim.x * (blockIdx.x + blockIdx.y * gridDim.x) + threadIdx.x);
+        /*
+        翻译公式：
+        idx = (一个Block有多少人) * ( 当前是第几个Block ) + (我在Block里的ID)
+                                                |
+                            ---------------------------------------
+                            |  blockIdx.x  +  blockIdx.y * gridDim.x |
+                            ---------------------------------------
+                            |    当前列    +   当前行    * 一行的跨度 |
+        */
     /* 1D grid */
     // int idx = blockDim.x * blockIdx.x + threadIdx.x;
     if (idx < N) z[idx] = y[idx] + x[idx];
@@ -29,6 +38,8 @@ int main()
 
     /* 2D grid */
     int s = ceil(sqrt((N + bs - 1.) / bs));
+    // 加一个 bs - 1  , 防止出现多给block的情况 （96+32）/32=4 不对
+    // （96+32-1）/32 = 3 .....31 ，只需要3个block
     dim3 grid(s, s);
     /* 1D grid */
     // int s = ceil((N + bs - 1.) / bs);
@@ -66,11 +77,13 @@ int main()
     cudaEventCreate(&stop);
     cudaEventRecord(start);
     /* launch GPU kernel */
-    vec_add<<<grid, bs>>>(dx, dy, dz, N);
+                                 vec_add<<<grid, bs>>>(dx, dy, dz, N);
+
     cudaEventRecord(stop);
-    cudaEventSynchronize(stop);
+    cudaEventSynchronize(stop); // cpu等待stop这个点，到了才继续往下执行
     cudaEventElapsedTime(&milliseconds, start, stop);  
-    
+    printf("Kernel execution time: %f ms\n", milliseconds);
+
 	/* copy GPU result to CPU */
     cudaMemcpy(hz, dz, nbytes, cudaMemcpyDeviceToHost);
 
@@ -78,12 +91,16 @@ int main()
     FLOAT* hz_cpu_res = (FLOAT *) malloc(nbytes);
     vec_add_cpu(hx, hy, hz_cpu_res, N);
 
+    //cudaDeviceSynchronize();//我刚加的
     /* check GPU result with CPU*/
     for (int i = 0; i < N; ++i) {
         if (fabs(hz_cpu_res[i] - hz[i]) > 1e-6) {
             printf("Result verification failed at element index %d!\n", i);
         }
     }
+     //for (int i = 0; i < N/100; ++i)
+    // printf("number: %d : gpu value is %lf , cpu value is %lf \n",i,hz[i],hz_cpu_res[i]);
+   
     printf("Result right\n");
     cudaFree(dx);
     cudaFree(dy);

@@ -1,4 +1,4 @@
-CMakeFiles/15_2_gemv.dir/15_gemv/15_2_fp32_fp16_gemv.cu.o : /home/ai/LLMQRT/CUDATutorial/15_gemv/15_2_fp32_fp16_gemv.cu \
+CMakeFiles/15_2_gemv.dir/15_gemv/15_2_fp32_fp16_gemv.cu.o : /home/ai/CUDATutorial/15_gemv/15_2_fp32_fp16_gemv.cu \
     /usr/include/stdc-predef.h \
     /usr/local/cuda/include/cuda_runtime.h \
     /usr/local/cuda/include/crt/host_config.h \
@@ -185,7 +185,7 @@ CMakeFiles/15_2_gemv.dir/15_gemv/15_2_fp32_fp16_gemv.cu.o : /home/ai/LLMQRT/CUDA
     /usr/include/c++/13/utility \
     /usr/include/c++/13/bits/stl_relops.h \
     /usr/include/c++/13/initializer_list \
-    /home/ai/LLMQRT/CUDATutorial/15_gemv/15_gemv.cuh \
+    /home/ai/CUDATutorial/15_gemv/15_gemv.cuh \
     /usr/local/cuda/include/cuda.h \
     /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h \
     /usr/include/stdint.h \

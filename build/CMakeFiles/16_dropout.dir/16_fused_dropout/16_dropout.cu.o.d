@@ -1,4 +1,4 @@
-CMakeFiles/16_dropout.dir/16_fused_dropout/16_dropout.cu.o : /home/ai/LLMQRT/CUDATutorial/16_fused_dropout/16_dropout.cu \
+CMakeFiles/16_dropout.dir/16_fused_dropout/16_dropout.cu.o : /home/ai/CUDATutorial/16_fused_dropout/16_dropout.cu \
     /usr/include/stdc-predef.h \
     /usr/local/cuda/include/cuda_runtime.h \
     /usr/local/cuda/include/crt/host_config.h \

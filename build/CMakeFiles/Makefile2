@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ai/LLMQRT/CUDATutorial
+CMAKE_SOURCE_DIR = /home/ai/CUDATutorial
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ai/LLMQRT/CUDATutorial/build
+CMAKE_BINARY_DIR = /home/ai/CUDATutorial/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -91,6 +91,7 @@ all: CMakeFiles/14_quantize.dir/all
 all: CMakeFiles/15_1_gemv.dir/all
 all: CMakeFiles/15_2_gemv.dir/all
 all: CMakeFiles/16_dropout.dir/all
+all: CMakeFiles/hopper_bench.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -126,6 +127,7 @@ clean: CMakeFiles/14_quantize.dir/clean
 clean: CMakeFiles/15_1_gemv.dir/clean
 clean: CMakeFiles/15_2_gemv.dir/clean
 clean: CMakeFiles/16_dropout.dir/clean
+clean: CMakeFiles/hopper_bench.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -135,14 +137,14 @@ clean: CMakeFiles/16_dropout.dir/clean
 CMakeFiles/1_hellocuda.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/1_hellocuda.dir/build.make CMakeFiles/1_hellocuda.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/1_hellocuda.dir/build.make CMakeFiles/1_hellocuda.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/LLMQRT/CUDATutorial/build/CMakeFiles --progress-num=21,22 "Built target 1_hellocuda"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=21,22 "Built target 1_hellocuda"
 .PHONY : CMakeFiles/1_hellocuda.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/1_hellocuda.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/1_hellocuda.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : CMakeFiles/1_hellocuda.dir/rule
 
 # Convenience name for target.
@@ -161,14 +163,14 @@ CMakeFiles/1_hellocuda.dir/clean:
 CMakeFiles/2_indexing.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/2_indexing.dir/build.make CMakeFiles/2_indexing.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/2_indexing.dir/build.make CMakeFiles/2_indexing.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/LLMQRT/CUDATutorial/build/CMakeFiles --progress-num=23,24 "Built target 2_indexing"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=23,24 "Built target 2_indexing"
 .PHONY : CMakeFiles/2_indexing.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/2_indexing.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/2_indexing.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : CMakeFiles/2_indexing.dir/rule
 
 # Convenience name for target.
@@ -187,14 +189,14 @@ CMakeFiles/2_indexing.dir/clean:
 CMakeFiles/3_vectorAdd.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/3_vectorAdd.dir/build.make CMakeFiles/3_vectorAdd.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/3_vectorAdd.dir/build.make CMakeFiles/3_vectorAdd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/LLMQRT/CUDATutorial/build/CMakeFiles --progress-num=27,28 "Built target 3_vectorAdd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=27,28 "Built target 3_vectorAdd"
 .PHONY : CMakeFiles/3_vectorAdd.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/3_vectorAdd.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/3_vectorAdd.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : CMakeFiles/3_vectorAdd.dir/rule
 
 # Convenience name for target.
@@ -213,14 +215,14 @@ CMakeFiles/3_vectorAdd.dir/clean:
 CMakeFiles/3_1_vectorAdd.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/3_1_vectorAdd.dir/build.make CMakeFiles/3_1_vectorAdd.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/3_1_vectorAdd.dir/build.make CMakeFiles/3_1_vectorAdd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/LLMQRT/CUDATutorial/build/CMakeFiles --progress-num=25,26 "Built target 3_1_vectorAdd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=25,26 "Built target 3_1_vectorAdd"
 .PHONY : CMakeFiles/3_1_vectorAdd.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/3_1_vectorAdd.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/3_1_vectorAdd.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : CMakeFiles/3_1_vectorAdd.dir/rule
 
 # Convenience name for target.
@@ -239,14 +241,14 @@ CMakeFiles/3_1_vectorAdd.dir/clean:
 CMakeFiles/4_device_query.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/4_device_query.dir/build.make CMakeFiles/4_device_query.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/4_device_query.dir/build.make CMakeFiles/4_device_query.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/LLMQRT/CUDATutorial/build/CMakeFiles --progress-num=29,30 "Built target 4_device_query"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=29,30 "Built target 4_device_query"
 .PHONY : CMakeFiles/4_device_query.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/4_device_query.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/4_device_query.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : CMakeFiles/4_device_query.dir/rule
 
 # Convenience name for target.
@@ -265,14 +267,14 @@ CMakeFiles/4_device_query.dir/clean:
 CMakeFiles/reduce_baseline.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/reduce_baseline.dir/build.make CMakeFiles/reduce_baseline.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/reduce_baseline.dir/build.make CMakeFiles/reduce_baseline.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/LLMQRT/CUDATutorial/build/CMakeFiles --progress-num=41,42 "Built target reduce_baseline"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=46,47 "Built target reduce_baseline"
 .PHONY : CMakeFiles/reduce_baseline.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/reduce_baseline.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/reduce_baseline.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : CMakeFiles/reduce_baseline.dir/rule
 
 # Convenience name for target.
@@ -291,14 +293,14 @@ CMakeFiles/reduce_baseline.dir/clean:
 CMakeFiles/reduce_v0.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/reduce_v0.dir/build.make CMakeFiles/reduce_v0.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/reduce_v0.dir/build.make CMakeFiles/reduce_v0.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/LLMQRT/CUDATutorial/build/CMakeFiles --progress-num=43,44 "Built target reduce_v0"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=48,49 "Built target reduce_v0"
 .PHONY : CMakeFiles/reduce_v0.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/reduce_v0.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/reduce_v0.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : CMakeFiles/reduce_v0.dir/rule
 
 # Convenience name for target.
@@ -317,14 +319,14 @@ CMakeFiles/reduce_v0.dir/clean:
 CMakeFiles/reduce_v1.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/reduce_v1.dir/build.make CMakeFiles/reduce_v1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/reduce_v1.dir/build.make CMakeFiles/reduce_v1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/LLMQRT/CUDATutorial/build/CMakeFiles --progress-num=45,46 "Built target reduce_v1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=50,51 "Built target reduce_v1"
 .PHONY : CMakeFiles/reduce_v1.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/reduce_v1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/reduce_v1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : CMakeFiles/reduce_v1.dir/rule
 
 # Convenience name for target.
@@ -343,14 +345,14 @@ CMakeFiles/reduce_v1.dir/clean:
 CMakeFiles/reduce_v2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/reduce_v2.dir/build.make CMakeFiles/reduce_v2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/reduce_v2.dir/build.make CMakeFiles/reduce_v2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/LLMQRT/CUDATutorial/build/CMakeFiles --progress-num=47,48 "Built target reduce_v2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=52,53 "Built target reduce_v2"
 .PHONY : CMakeFiles/reduce_v2.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/reduce_v2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/reduce_v2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : CMakeFiles/reduce_v2.dir/rule
 
 # Convenience name for target.
@@ -369,14 +371,14 @@ CMakeFiles/reduce_v2.dir/clean:
 CMakeFiles/reduce_v3.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/reduce_v3.dir/build.make CMakeFiles/reduce_v3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/reduce_v3.dir/build.make CMakeFiles/reduce_v3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/LLMQRT/CUDATutorial/build/CMakeFiles --progress-num=49,50 "Built target reduce_v3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=54,55 "Built target reduce_v3"
 .PHONY : CMakeFiles/reduce_v3.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/reduce_v3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/reduce_v3.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : CMakeFiles/reduce_v3.dir/rule
 
 # Convenience name for target.
@@ -395,14 +397,14 @@ CMakeFiles/reduce_v3.dir/clean:
 CMakeFiles/reduce_v4.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/reduce_v4.dir/build.make CMakeFiles/reduce_v4.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/reduce_v4.dir/build.make CMakeFiles/reduce_v4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/LLMQRT/CUDATutorial/build/CMakeFiles --progress-num=51,52 "Built target reduce_v4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=56,57 "Built target reduce_v4"
 .PHONY : CMakeFiles/reduce_v4.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/reduce_v4.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/reduce_v4.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : CMakeFiles/reduce_v4.dir/rule
 
 # Convenience name for target.
@@ -421,14 +423,14 @@ CMakeFiles/reduce_v4.dir/clean:
 CMakeFiles/reduce_v5.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/reduce_v5.dir/build.make CMakeFiles/reduce_v5.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/reduce_v5.dir/build.make CMakeFiles/reduce_v5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/LLMQRT/CUDATutorial/build/CMakeFiles --progress-num=53,54 "Built target reduce_v5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=58,59 "Built target reduce_v5"
 .PHONY : CMakeFiles/reduce_v5.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/reduce_v5.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/reduce_v5.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : CMakeFiles/reduce_v5.dir/rule
 
 # Convenience name for target.
@@ -447,14 +449,14 @@ CMakeFiles/reduce_v5.dir/clean:
 CMakeFiles/reduce_v6.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/reduce_v6.dir/build.make CMakeFiles/reduce_v6.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/reduce_v6.dir/build.make CMakeFiles/reduce_v6.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/LLMQRT/CUDATutorial/build/CMakeFiles --progress-num=55,56 "Built target reduce_v6"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=60,61 "Built target reduce_v6"
 .PHONY : CMakeFiles/reduce_v6.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/reduce_v6.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/reduce_v6.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : CMakeFiles/reduce_v6.dir/rule
 
 # Convenience name for target.
@@ -473,14 +475,14 @@ CMakeFiles/reduce_v6.dir/clean:
 CMakeFiles/6_warp_level_reduce.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/6_warp_level_reduce.dir/build.make CMakeFiles/6_warp_level_reduce.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/6_warp_level_reduce.dir/build.make CMakeFiles/6_warp_level_reduce.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/LLMQRT/CUDATutorial/build/CMakeFiles --progress-num=31,32 "Built target 6_warp_level_reduce"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=31,32 "Built target 6_warp_level_reduce"
 .PHONY : CMakeFiles/6_warp_level_reduce.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/6_warp_level_reduce.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/6_warp_level_reduce.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : CMakeFiles/6_warp_level_reduce.dir/rule
 
 # Convenience name for target.
@@ -499,14 +501,14 @@ CMakeFiles/6_warp_level_reduce.dir/clean:
 CMakeFiles/7_histogram.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/7_histogram.dir/build.make CMakeFiles/7_histogram.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/7_histogram.dir/build.make CMakeFiles/7_histogram.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/LLMQRT/CUDATutorial/build/CMakeFiles --progress-num=35,36 "Built target 7_histogram"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=35,36 "Built target 7_histogram"
 .PHONY : CMakeFiles/7_histogram.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/7_histogram.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/7_histogram.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : CMakeFiles/7_histogram.dir/rule
 
 # Convenience name for target.
@@ -525,14 +527,14 @@ CMakeFiles/7_histogram.dir/clean:
 CMakeFiles/7_1_histogram.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/7_1_histogram.dir/build.make CMakeFiles/7_1_histogram.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/7_1_histogram.dir/build.make CMakeFiles/7_1_histogram.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/LLMQRT/CUDATutorial/build/CMakeFiles --progress-num=33,34 "Built target 7_1_histogram"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=33,34 "Built target 7_1_histogram"
 .PHONY : CMakeFiles/7_1_histogram.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/7_1_histogram.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/7_1_histogram.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : CMakeFiles/7_1_histogram.dir/rule
 
 # Convenience name for target.
@@ -551,14 +553,14 @@ CMakeFiles/7_1_histogram.dir/clean:
 CMakeFiles/8_copy_if.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/8_copy_if.dir/build.make CMakeFiles/8_copy_if.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/8_copy_if.dir/build.make CMakeFiles/8_copy_if.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/LLMQRT/CUDATutorial/build/CMakeFiles --progress-num=37,38 "Built target 8_copy_if"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=37,38 "Built target 8_copy_if"
 .PHONY : CMakeFiles/8_copy_if.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/8_copy_if.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/8_copy_if.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : CMakeFiles/8_copy_if.dir/rule
 
 # Convenience name for target.
@@ -577,14 +579,14 @@ CMakeFiles/8_copy_if.dir/clean:
 CMakeFiles/9_gelu.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/9_gelu.dir/build.make CMakeFiles/9_gelu.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/9_gelu.dir/build.make CMakeFiles/9_gelu.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/LLMQRT/CUDATutorial/build/CMakeFiles --progress-num=39,40 "Built target 9_gelu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=39,40 "Built target 9_gelu"
 .PHONY : CMakeFiles/9_gelu.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/9_gelu.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/9_gelu.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : CMakeFiles/9_gelu.dir/rule
 
 # Convenience name for target.
@@ -603,14 +605,14 @@ CMakeFiles/9_gelu.dir/clean:
 CMakeFiles/10_fp32.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/10_fp32.dir/build.make CMakeFiles/10_fp32.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/10_fp32.dir/build.make CMakeFiles/10_fp32.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/LLMQRT/CUDATutorial/build/CMakeFiles --progress-num=3,4 "Built target 10_fp32"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=3,4 "Built target 10_fp32"
 .PHONY : CMakeFiles/10_fp32.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/10_fp32.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/10_fp32.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : CMakeFiles/10_fp32.dir/rule
 
 # Convenience name for target.
@@ -629,14 +631,14 @@ CMakeFiles/10_fp32.dir/clean:
 CMakeFiles/10_fp16.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/10_fp16.dir/build.make CMakeFiles/10_fp16.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/10_fp16.dir/build.make CMakeFiles/10_fp16.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/LLMQRT/CUDATutorial/build/CMakeFiles --progress-num=1,2 "Built target 10_fp16"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=1,2 "Built target 10_fp16"
 .PHONY : CMakeFiles/10_fp16.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/10_fp16.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/10_fp16.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : CMakeFiles/10_fp16.dir/rule
 
 # Convenience name for target.
@@ -655,14 +657,14 @@ CMakeFiles/10_fp16.dir/clean:
 CMakeFiles/11_softmax.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/11_softmax.dir/build.make CMakeFiles/11_softmax.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/11_softmax.dir/build.make CMakeFiles/11_softmax.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/LLMQRT/CUDATutorial/build/CMakeFiles --progress-num=5,6 "Built target 11_softmax"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=5,6 "Built target 11_softmax"
 .PHONY : CMakeFiles/11_softmax.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/11_softmax.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/11_softmax.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : CMakeFiles/11_softmax.dir/rule
 
 # Convenience name for target.
@@ -681,14 +683,14 @@ CMakeFiles/11_softmax.dir/clean:
 CMakeFiles/12_measure_GPU_peak_perf.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/12_measure_GPU_peak_perf.dir/build.make CMakeFiles/12_measure_GPU_peak_perf.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/12_measure_GPU_peak_perf.dir/build.make CMakeFiles/12_measure_GPU_peak_perf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/LLMQRT/CUDATutorial/build/CMakeFiles --progress-num=7,8 "Built target 12_measure_GPU_peak_perf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=7,8 "Built target 12_measure_GPU_peak_perf"
 .PHONY : CMakeFiles/12_measure_GPU_peak_perf.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/12_measure_GPU_peak_perf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/12_measure_GPU_peak_perf.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : CMakeFiles/12_measure_GPU_peak_perf.dir/rule
 
 # Convenience name for target.
@@ -707,14 +709,14 @@ CMakeFiles/12_measure_GPU_peak_perf.dir/clean:
 CMakeFiles/13_1_CUDAstream.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/13_1_CUDAstream.dir/build.make CMakeFiles/13_1_CUDAstream.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/13_1_CUDAstream.dir/build.make CMakeFiles/13_1_CUDAstream.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/LLMQRT/CUDATutorial/build/CMakeFiles --progress-num=9,10 "Built target 13_1_CUDAstream"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=9,10 "Built target 13_1_CUDAstream"
 .PHONY : CMakeFiles/13_1_CUDAstream.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/13_1_CUDAstream.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/13_1_CUDAstream.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : CMakeFiles/13_1_CUDAstream.dir/rule
 
 # Convenience name for target.
@@ -733,14 +735,14 @@ CMakeFiles/13_1_CUDAstream.dir/clean:
 CMakeFiles/13_2_CUDAstream.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/13_2_CUDAstream.dir/build.make CMakeFiles/13_2_CUDAstream.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/13_2_CUDAstream.dir/build.make CMakeFiles/13_2_CUDAstream.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/LLMQRT/CUDATutorial/build/CMakeFiles --progress-num=11,12 "Built target 13_2_CUDAstream"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=11,12 "Built target 13_2_CUDAstream"
 .PHONY : CMakeFiles/13_2_CUDAstream.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/13_2_CUDAstream.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/13_2_CUDAstream.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : CMakeFiles/13_2_CUDAstream.dir/rule
 
 # Convenience name for target.
@@ -759,14 +761,14 @@ CMakeFiles/13_2_CUDAstream.dir/clean:
 CMakeFiles/14_quantize.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/14_quantize.dir/build.make CMakeFiles/14_quantize.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/14_quantize.dir/build.make CMakeFiles/14_quantize.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/LLMQRT/CUDATutorial/build/CMakeFiles --progress-num=13,14 "Built target 14_quantize"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=13,14 "Built target 14_quantize"
 .PHONY : CMakeFiles/14_quantize.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/14_quantize.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/14_quantize.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : CMakeFiles/14_quantize.dir/rule
 
 # Convenience name for target.
@@ -785,14 +787,14 @@ CMakeFiles/14_quantize.dir/clean:
 CMakeFiles/15_1_gemv.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/15_1_gemv.dir/build.make CMakeFiles/15_1_gemv.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/15_1_gemv.dir/build.make CMakeFiles/15_1_gemv.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/LLMQRT/CUDATutorial/build/CMakeFiles --progress-num=15,16 "Built target 15_1_gemv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=15,16 "Built target 15_1_gemv"
 .PHONY : CMakeFiles/15_1_gemv.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/15_1_gemv.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/15_1_gemv.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : CMakeFiles/15_1_gemv.dir/rule
 
 # Convenience name for target.
@@ -811,14 +813,14 @@ CMakeFiles/15_1_gemv.dir/clean:
 CMakeFiles/15_2_gemv.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/15_2_gemv.dir/build.make CMakeFiles/15_2_gemv.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/15_2_gemv.dir/build.make CMakeFiles/15_2_gemv.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/LLMQRT/CUDATutorial/build/CMakeFiles --progress-num=17,18 "Built target 15_2_gemv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=17,18 "Built target 15_2_gemv"
 .PHONY : CMakeFiles/15_2_gemv.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/15_2_gemv.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/15_2_gemv.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : CMakeFiles/15_2_gemv.dir/rule
 
 # Convenience name for target.
@@ -837,14 +839,14 @@ CMakeFiles/15_2_gemv.dir/clean:
 CMakeFiles/16_dropout.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/16_dropout.dir/build.make CMakeFiles/16_dropout.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/16_dropout.dir/build.make CMakeFiles/16_dropout.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/LLMQRT/CUDATutorial/build/CMakeFiles --progress-num=19,20 "Built target 16_dropout"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=19,20 "Built target 16_dropout"
 .PHONY : CMakeFiles/16_dropout.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/16_dropout.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/16_dropout.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : CMakeFiles/16_dropout.dir/rule
 
 # Convenience name for target.
@@ -855,6 +857,32 @@ CMakeFiles/16_dropout.dir/rule: cmake_check_build_system
 CMakeFiles/16_dropout.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/16_dropout.dir/build.make CMakeFiles/16_dropout.dir/clean
 .PHONY : CMakeFiles/16_dropout.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/hopper_bench.dir
+
+# All Build rule for target.
+CMakeFiles/hopper_bench.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hopper_bench.dir/build.make CMakeFiles/hopper_bench.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hopper_bench.dir/build.make CMakeFiles/hopper_bench.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ai/CUDATutorial/build/CMakeFiles --progress-num=41,42,43,44,45 "Built target hopper_bench"
+.PHONY : CMakeFiles/hopper_bench.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/hopper_bench.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/hopper_bench.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
+.PHONY : CMakeFiles/hopper_bench.dir/rule
+
+# Convenience name for target.
+hopper_bench: CMakeFiles/hopper_bench.dir/rule
+.PHONY : hopper_bench
+
+# clean rule for target.
+CMakeFiles/hopper_bench.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hopper_bench.dir/build.make CMakeFiles/hopper_bench.dir/clean
+.PHONY : CMakeFiles/hopper_bench.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

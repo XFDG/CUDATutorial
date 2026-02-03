@@ -1,4 +1,4 @@
-CMakeFiles/14_quantize.dir/14_quantize.cu.o : /home/ai/LLMQRT/CUDATutorial/14_quantize.cu \
+CMakeFiles/14_quantize.dir/14_quantize.cu.o : /home/ai/CUDATutorial/14_quantize.cu \
     /usr/include/stdc-predef.h \
     /usr/local/cuda/include/cuda_runtime.h \
     /usr/local/cuda/include/crt/host_config.h \

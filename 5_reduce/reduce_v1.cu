@@ -124,7 +124,7 @@ __global__ void reduce_v1(float *d_in,float *d_out){
 
     for(int index = 1; index < blockDim.x; index *= 2) {
         // 算法思路和v0一致，仅仅是用位运算替代了v0 if语句中的除余操作
-        if ((tid & (2 * index - 1)) == 0){
+        if ((tid & (2 * index - 1)) == 0){   //等价于  tid %(2*index) == 0
             smem[tid] += smem[tid + index];
         }
         __syncthreads();

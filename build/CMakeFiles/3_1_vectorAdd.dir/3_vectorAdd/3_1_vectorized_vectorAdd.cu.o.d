@@ -1,4 +1,4 @@
-CMakeFiles/3_1_vectorAdd.dir/3_vectorAdd/3_1_vectorized_vectorAdd.cu.o : /home/ai/LLMQRT/CUDATutorial/3_vectorAdd/3_1_vectorized_vectorAdd.cu \
+CMakeFiles/3_1_vectorAdd.dir/3_vectorAdd/3_1_vectorized_vectorAdd.cu.o : /home/ai/CUDATutorial/3_vectorAdd/3_1_vectorized_vectorAdd.cu \
     /usr/include/stdc-predef.h \
     /usr/local/cuda/include/cuda_runtime.h \
     /usr/local/cuda/include/crt/host_config.h \

@@ -260,3 +260,29 @@ target_link_libraries(
     16_dropout PUBLIC
     -lcudart
     -lcudadevrt)
+# --- Hopper/Blackwell PDL 实验部分 ---
+
+# --- Hopper/Blackwell PDL 实验部分 ---
+
+find_package(CUDAToolkit REQUIRED)
+
+set(HOPPER_TEST_SOURCES
+    hopper_test/main.cu
+    hopper_test/base.cu
+    hopper_test/optimized.cu
+)
+
+add_executable(hopper_bench ${HOPPER_TEST_SOURCES})
+
+# 修改点：只保留 cudart，去掉 cudadevrt
+# 因为 CUDA_SEPARABLE_COMPILATION ON 会自动处理它
+target_link_libraries(hopper_bench PUBLIC 
+    CUDA::cudart 
+)
+
+set_target_properties(hopper_bench PROPERTIES
+    CUDA_STANDARD 17
+    CUDA_STANDARD_REQUIRED ON
+    CUDA_SEPARABLE_COMPILATION ON  # <--- 这个选项才是关键
+    CUDA_ARCHITECTURES "90"
+)

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ai/LLMQRT/CUDATutorial/5_reduce/reduce_v0.cu" "CMakeFiles/reduce_v0.dir/5_reduce/reduce_v0.cu.o" "gcc" "CMakeFiles/reduce_v0.dir/5_reduce/reduce_v0.cu.o.d"
+  "/home/ai/CUDATutorial/5_reduce/reduce_v0.cu" "CMakeFiles/reduce_v0.dir/5_reduce/reduce_v0.cu.o" "gcc" "CMakeFiles/reduce_v0.dir/5_reduce/reduce_v0.cu.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

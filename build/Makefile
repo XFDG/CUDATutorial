@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ai/LLMQRT/CUDATutorial
+CMAKE_SOURCE_DIR = /home/ai/CUDATutorial
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ai/LLMQRT/CUDATutorial/build
+CMAKE_BINARY_DIR = /home/ai/CUDATutorial/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles /home/ai/LLMQRT/CUDATutorial/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles /home/ai/CUDATutorial/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/LLMQRT/CUDATutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/CUDATutorial/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -479,6 +479,19 @@ reduce_v6/fast:
 16_dropout/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/16_dropout.dir/build.make CMakeFiles/16_dropout.dir/build
 .PHONY : 16_dropout/fast
+
+#=============================================================================
+# Target rules for targets named hopper_bench
+
+# Build rule for target.
+hopper_bench: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hopper_bench
+.PHONY : hopper_bench
+
+# fast build rule for target.
+hopper_bench/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hopper_bench.dir/build.make CMakeFiles/hopper_bench.dir/build
+.PHONY : hopper_bench/fast
 
 10_fused_bias_mask_scale_and_add/10_fused_bias_mask_scale_and_add_fp16.o: 10_fused_bias_mask_scale_and_add/10_fused_bias_mask_scale_and_add_fp16.cu.o
 .PHONY : 10_fused_bias_mask_scale_and_add/10_fused_bias_mask_scale_and_add_fp16.o
@@ -1152,6 +1165,78 @@ reduce_v6/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/9_gelu.dir/build.make CMakeFiles/9_gelu.dir/9_gelu.cu.s
 .PHONY : 9_gelu.cu.s
 
+hopper_test/base.o: hopper_test/base.cu.o
+.PHONY : hopper_test/base.o
+
+# target to build an object file
+hopper_test/base.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hopper_bench.dir/build.make CMakeFiles/hopper_bench.dir/hopper_test/base.cu.o
+.PHONY : hopper_test/base.cu.o
+
+hopper_test/base.i: hopper_test/base.cu.i
+.PHONY : hopper_test/base.i
+
+# target to preprocess a source file
+hopper_test/base.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hopper_bench.dir/build.make CMakeFiles/hopper_bench.dir/hopper_test/base.cu.i
+.PHONY : hopper_test/base.cu.i
+
+hopper_test/base.s: hopper_test/base.cu.s
+.PHONY : hopper_test/base.s
+
+# target to generate assembly for a file
+hopper_test/base.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hopper_bench.dir/build.make CMakeFiles/hopper_bench.dir/hopper_test/base.cu.s
+.PHONY : hopper_test/base.cu.s
+
+hopper_test/main.o: hopper_test/main.cu.o
+.PHONY : hopper_test/main.o
+
+# target to build an object file
+hopper_test/main.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hopper_bench.dir/build.make CMakeFiles/hopper_bench.dir/hopper_test/main.cu.o
+.PHONY : hopper_test/main.cu.o
+
+hopper_test/main.i: hopper_test/main.cu.i
+.PHONY : hopper_test/main.i
+
+# target to preprocess a source file
+hopper_test/main.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hopper_bench.dir/build.make CMakeFiles/hopper_bench.dir/hopper_test/main.cu.i
+.PHONY : hopper_test/main.cu.i
+
+hopper_test/main.s: hopper_test/main.cu.s
+.PHONY : hopper_test/main.s
+
+# target to generate assembly for a file
+hopper_test/main.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hopper_bench.dir/build.make CMakeFiles/hopper_bench.dir/hopper_test/main.cu.s
+.PHONY : hopper_test/main.cu.s
+
+hopper_test/optimized.o: hopper_test/optimized.cu.o
+.PHONY : hopper_test/optimized.o
+
+# target to build an object file
+hopper_test/optimized.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hopper_bench.dir/build.make CMakeFiles/hopper_bench.dir/hopper_test/optimized.cu.o
+.PHONY : hopper_test/optimized.cu.o
+
+hopper_test/optimized.i: hopper_test/optimized.cu.i
+.PHONY : hopper_test/optimized.i
+
+# target to preprocess a source file
+hopper_test/optimized.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hopper_bench.dir/build.make CMakeFiles/hopper_bench.dir/hopper_test/optimized.cu.i
+.PHONY : hopper_test/optimized.cu.i
+
+hopper_test/optimized.s: hopper_test/optimized.cu.s
+.PHONY : hopper_test/optimized.s
+
+# target to generate assembly for a file
+hopper_test/optimized.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hopper_bench.dir/build.make CMakeFiles/hopper_bench.dir/hopper_test/optimized.cu.s
+.PHONY : hopper_test/optimized.cu.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1180,6 +1265,7 @@ help:
 	@echo "... 7_histogram"
 	@echo "... 8_copy_if"
 	@echo "... 9_gelu"
+	@echo "... hopper_bench"
 	@echo "... reduce_baseline"
 	@echo "... reduce_v0"
 	@echo "... reduce_v1"
@@ -1272,6 +1358,15 @@ help:
 	@echo "... 9_gelu.o"
 	@echo "... 9_gelu.i"
 	@echo "... 9_gelu.s"
+	@echo "... hopper_test/base.o"
+	@echo "... hopper_test/base.i"
+	@echo "... hopper_test/base.s"
+	@echo "... hopper_test/main.o"
+	@echo "... hopper_test/main.i"
+	@echo "... hopper_test/main.s"
+	@echo "... hopper_test/optimized.o"
+	@echo "... hopper_test/optimized.i"
+	@echo "... hopper_test/optimized.s"
 .PHONY : help
 
 

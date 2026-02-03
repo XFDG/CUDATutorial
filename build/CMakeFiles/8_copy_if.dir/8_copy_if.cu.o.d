@@ -1,4 +1,4 @@
-CMakeFiles/8_copy_if.dir/8_copy_if.cu.o : /home/ai/LLMQRT/CUDATutorial/8_copy_if.cu \
+CMakeFiles/8_copy_if.dir/8_copy_if.cu.o : /home/ai/CUDATutorial/8_copy_if.cu \
     /usr/include/stdc-predef.h \
     /usr/local/cuda/include/cuda_runtime.h \
     /usr/local/cuda/include/crt/host_config.h \

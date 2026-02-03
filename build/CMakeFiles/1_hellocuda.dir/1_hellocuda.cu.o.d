@@ -1,4 +1,4 @@
-CMakeFiles/1_hellocuda.dir/1_hellocuda.cu.o : /home/ai/LLMQRT/CUDATutorial/1_hellocuda.cu \
+CMakeFiles/1_hellocuda.dir/1_hellocuda.cu.o : /home/ai/CUDATutorial/1_hellocuda.cu \
     /usr/include/stdc-predef.h \
     /usr/local/cuda/include/cuda_runtime.h \
     /usr/local/cuda/include/crt/host_config.h \

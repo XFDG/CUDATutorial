@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ai/LLMQRT/CUDATutorial/4_device_query.cu" "CMakeFiles/4_device_query.dir/4_device_query.cu.o" "gcc" "CMakeFiles/4_device_query.dir/4_device_query.cu.o.d"
+  "/home/ai/CUDATutorial/4_device_query.cu" "CMakeFiles/4_device_query.dir/4_device_query.cu.o" "gcc" "CMakeFiles/4_device_query.dir/4_device_query.cu.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

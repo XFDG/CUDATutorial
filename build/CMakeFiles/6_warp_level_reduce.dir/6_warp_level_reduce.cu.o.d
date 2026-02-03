@@ -1,4 +1,4 @@
-CMakeFiles/6_warp_level_reduce.dir/6_warp_level_reduce.cu.o : /home/ai/LLMQRT/CUDATutorial/6_warp_level_reduce.cu \
+CMakeFiles/6_warp_level_reduce.dir/6_warp_level_reduce.cu.o : /home/ai/CUDATutorial/6_warp_level_reduce.cu \
     /usr/include/stdc-predef.h \
     /usr/local/cuda/include/cuda_runtime.h \
     /usr/local/cuda/include/crt/host_config.h \

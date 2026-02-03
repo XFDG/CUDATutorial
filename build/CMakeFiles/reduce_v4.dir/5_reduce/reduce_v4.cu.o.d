@@ -1,4 +1,4 @@
-CMakeFiles/reduce_v4.dir/5_reduce/reduce_v4.cu.o : /home/ai/LLMQRT/CUDATutorial/5_reduce/reduce_v4.cu \
+CMakeFiles/reduce_v4.dir/5_reduce/reduce_v4.cu.o : /home/ai/CUDATutorial/5_reduce/reduce_v4.cu \
     /usr/include/stdc-predef.h \
     /usr/local/cuda/include/cuda_runtime.h \
     /usr/local/cuda/include/crt/host_config.h \
