@@ -93,7 +93,7 @@ __global__ void FP16GeluCUDAKernel(const __half* x,
     } else {
       // Note: when you have ampere GPU, you can enable the "apply2" method replacing L99-L102 to get performance improvement by half2 intrinsic do vector computation.
       //for (int i = 0; i < VecSize; i += 2) {
-      //  gelu_fwd.apply2(y + offset, in + i);
+      //  gelu_fwd.apply2(y + offset + i, in + i);
       //}
       //标量计算
         for (int i = 0; i < VecSize; i++) {
